@@ -1,0 +1,213 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(360deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 98vh;
+  overflow: hidden;
+}
+
+#title {
+  margin-top: 3rem;
+}
+
+.listCont {
+  background-color: white;
+  width: 50%;
+  box-shadow: -8px 10px 26px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+#listTitle {
+  padding: 0 1rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  -webkit-text-stroke: 0.3px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.addCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0.2rem;
+}
+
+#addIcon {
+  color: rgba(0, 0, 0, 0.3);
+  transition: 300ms all ease-in-out;
+}
+
+.addIconEnter {
+  transform: scale(1.3) !important;
+  color: rgb(7, 205, 7) !important;
+}
+
+.addIconError {
+  transform: scale(1.3) rotate(45deg) !important;
+  color: rgb(0, 0, 0, 0.5) !important;
+}
+
+#addIcon:hover {
+  transform: scale(1.4);
+  color: rgb(7, 205, 7);
+}
+
+#addIcon:active {
+  transform: scale(1);
+  transition: 50ms all ease-in-out;
+  color: rgb(0, 160, 0);
+}
+
+.addToInput {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+  font-style: italic;
+  display: flex;
+}
+
+.addToInput:active,
+.addToInput:focus-visible {
+  outline: none;
+}
+
+.toDoList {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#toDo {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.listItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.listItemJs {
+  background-color: red;
+}
+
+.listItem:hover {
+  background-color: rgba(255, 232, 128, 0.25);
+}
+
+.toDoTask {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: 300ms all ease-in-out;
+  cursor: pointer;
+}
+
+.checkBox {
+  cursor: pointer;
+}
+
+.checked {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+.taskChecked {
+  color: rgba(0, 0, 0, 0.25);
+  text-decoration: line-through;
+}
+
+.clear {
+  height: 3rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 200ms all ease-in-out;
+  font-size: 1rem;
+  -webkit-text-stroke: 0.3px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.clear:hover {
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.clear:active {
+  background-color: rgba(0, 0, 0, 0.493);
+  transition: 30ms all ease-in-out;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.removeIcon {
+  cursor: pointer;
+  padding: 1rem 0.5rem;
+  transition: 300ms all ease-in-out;
+  color: rgba(0, 0, 0, 0);
+}
+
+.listItem:hover .removeIcon {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.listItem:hover .removeIcon:hover {
+  color: red;
+}
+
+.listItem:hover .removeIcon:active {
+  color: rgb(142, 0, 0);
+  transition: 50ms all ease-in-out;
+}
+
+.showRemove {
+  display: block;
+}
+
+.moveIcon {
+  cursor: grab;
+  padding: 1rem 0.5rem;
+  transition: 300ms all ease-in-out;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.moveIcon:hover {
+  color: rgb(0, 110, 255);
+}
+
+.moveIcon:active {
+  transform: scale(1.3);
+}
+
+.listElement {
+  height: 3rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 10% 10%;
+  transition: 300ms all ease-in-out;
+}
